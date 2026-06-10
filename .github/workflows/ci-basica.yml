@@ -1,0 +1,14 @@
+name: CI Basica
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  hola-mundo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Saludo inicial
+        run: echo "Primer workflow ejecutado correctamente"
+        
